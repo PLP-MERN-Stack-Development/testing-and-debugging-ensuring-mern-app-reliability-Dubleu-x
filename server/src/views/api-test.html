@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test - MERN Server</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #00b894;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #74b9ff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px;
+            transition: transform 0.3s;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-home {
+            background: linear-gradient(135deg, #00b894, #00a085);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✅</div>
+        <h1>API Test Successful!</h1>
+        <p class="message">Your MERN server API is working correctly.</p>
+        
+        <div class="info-card">
+            <h3>Request Details</h3>
+            <div class="info-item">
+                <strong>Endpoint:</strong> ${endpoint}
+            </div>
+            <div class="info-item">
+                <strong>Method:</strong> ${method}
+            </div>
+            <div class="info-item">
+                <strong>Status:</strong> <span style="color: #00b894;">${status} Success</span>
+            </div>
+            <div class="info-item">
+                <strong>Environment:</strong> ${environment}
+            </div>
+            <div class="info-item">
+                <strong>Timestamp:</strong> ${timestamp}
+            </div>
+        </div>
+
+        <div>
+            <a href="/" class="btn btn-home">🏠 Back to Home</a>
+            <a href="/api/posts" class="btn">📝 View Posts API</a>
+        </div>
+    </div>
+</body>
+</html>

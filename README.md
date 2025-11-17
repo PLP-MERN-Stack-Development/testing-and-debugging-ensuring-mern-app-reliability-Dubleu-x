@@ -288,10 +288,10 @@ module.exports = {
 ### Coverage Screenshots
 
 
-![Client Coverage](screenshots/client-coverage.png)  
+![Client Coverage](./Img/client.jpeg)  
 *React component test coverage*
 
-![Server Coverage](screenshots/server-coverage.png)
+![Server Coverage](./Img/server.jpeg)
 *Express server test coverage*
 
 ## 🐛 Common Issues & Solutions
