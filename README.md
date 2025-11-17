@@ -62,6 +62,8 @@ mern-testing/
    npm install
    ```
 
+## Github pages 
+ [ https://plp-mern-stack-development.github.io/testing-and-debugging-ensuring-mern-app-reliability-Dubleu-x/]
 ### Running the Application
 
 1. **Start the Server**
